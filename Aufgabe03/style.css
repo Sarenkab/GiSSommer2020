@@ -5,6 +5,8 @@ body{
     width: 800px;
     margin-left: auto;
     margin-right: auto;
+    
+   
 }
 .halbkreis{
         display: inline-block;
@@ -66,3 +68,13 @@ body{
     background-color: rgb(160, 93, 93);
     color: white;
 }
+h1{
+    color: white;
+}
+p{
+    color: white;
+}
+h2{
+    color:#0B173B;
+}
+
