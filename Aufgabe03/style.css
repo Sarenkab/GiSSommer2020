@@ -13,9 +13,9 @@ body{
         background: rgb(170, 205, 233);
         height: 400px;
         width: 800px;
-        -webkit-border-radius: 0px 0px 800px 800px;
-        -moz-border-radius: 0px 0px 800px 800px;
-        border-radius: 0px 0px 800px 800px;
+        -webkit-border-radius: -1px -1px 800px 800px;
+        -moz-border-radius: -1px -1px 800px 800px;
+        border-radius: -1px -1px 800px 800px;
 }
 #navigation {
     overflow: hidden;
@@ -72,10 +72,29 @@ h1{
     color: white;
 }
 p{
-    color: white;
+    color:rgb(65, 84, 141);
 }
 h2{
     color:#0B173B;
+}
+h4{
+  color:#0B173B;
+}
+h3{
+  color:#0B173B;
+}
+small{
+  color:rgb(65, 84, 141);
+}
+large{
+  color:#0B173B;
+}
+
+medium{
+  color:rgb(65, 84, 141);
+}
+b{
+  color:rgb(105, 126, 192);
 }
 
 .icon {
