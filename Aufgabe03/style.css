@@ -102,14 +102,14 @@ h3{
 small{
   color:rgb(65, 84, 141);
 }
-large  {
+h5{
 
   font-size: 40px;
   color:#0B173B;
 
 }
 
-medium {
+h6 {
   font-size: medium;
   color:rgb(65, 84, 141);
 }
