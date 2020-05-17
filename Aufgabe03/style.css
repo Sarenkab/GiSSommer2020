@@ -49,8 +49,8 @@ body{
 
   .contact{
     color: rgb(48, 43, 39);
-    font-size: smaller;
-    text-align: left;
+    font-size: medium;
+    text-align: center;
 }
 .contact #button{
     color: white;
@@ -98,9 +98,11 @@ large  {
 }
 
 medium {
-  text-align: left;
+  font-size: medium;
   color:rgb(65, 84, 141);
 }
+
+
 b{
   text-align: left;
   color:rgb(105, 126, 192);
@@ -121,16 +123,16 @@ b{
 }
 
 .icon a:hover {
-  background-color: rgb(255, 250, 250);
+  background-color:rgb(105,126,192);
   width: 80px;
 }
 .videos{
-  border-color: #0B173B;
+  border-color: rgb(105, 126, 192);;
   border-width: 5px;
   border-style: dotted;
 }
 .medien{
-  border-color: #0B173B;
+  border-color: rgb(105, 126, 192);;
   border-width: 5px;
   border-style: dotted;
 }
