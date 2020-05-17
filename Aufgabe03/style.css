@@ -108,31 +108,19 @@ b{
   color:rgb(105, 126, 192);
 }
 
-.icon {
-  width: 60px;
-  overflow: auto;
+.icon{
+width: 40px;
 }
-
-.icon a {
-  float: right;
-  width: 10%;
-  text-align: center;
-  padding: 2px ;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
-
-.icon a:hover {
-  background-color:rgb(105,126,192);
-  width: 80px;
+.icon:hover{
+  width: 55px;
 }
 .videos{
-  border-color: rgb(105, 126, 192);;
-  border-width: 5px;
+  border-color: rgb(194, 204, 236);;
+  border-width: 2px;
   border-style: dotted;
 }
 .medien{
-  border-color: rgb(105, 126, 192);;
-  border-width: 5px;
+  border-color: rgb(194, 204, 236);;
+  border-width: 2px;
   border-style: dotted;
 }
