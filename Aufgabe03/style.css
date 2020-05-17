@@ -15,7 +15,7 @@ body{
         width: 800px;
         -webkit-border-radius: -1px -1px 800px 800px;
         -moz-border-radius: -1px -1px 800px 800px;
-        border-radius: -1px -1px 800px 800px;
+        border-radius: 0px 0px 800px 800px;
 }
 #navigation {
     overflow: hidden;
@@ -70,6 +70,7 @@ body{
 }
 h1{
     color: white;
+    font-size: xx-large;
 }
 p{
     color:rgb(65, 84, 141);
@@ -86,11 +87,11 @@ h3{
 small{
   color:rgb(65, 84, 141);
 }
-large{
+large  {
   color:#0B173B;
 }
 
-medium{
+medium {
   color:rgb(65, 84, 141);
 }
 b{
@@ -113,4 +114,5 @@ b{
 
 .icon a:hover {
   background-color: rgb(255, 250, 250);
+  width: 30%;
 }
