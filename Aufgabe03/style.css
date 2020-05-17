@@ -3,8 +3,9 @@ body{
     font-family: sans-serif;
     text-align: center;
     width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0px;
+    padding: 0px;
+   
     
    
 }
@@ -13,14 +14,14 @@ body{
         background: rgb(170, 205, 233);
         height: 400px;
         width: 800px;
-        -webkit-border-radius: -1px -1px 800px 800px;
-        -moz-border-radius: -1px -1px 800px 800px;
+        -webkit-border-radius: 0px 0px 800px 800px;
+        -moz-border-radius: 0px 0px 800px 800px;
         border-radius: 0px 0px 800px 800px;
 }
 #navigation {
-    overflow: hidden;
+    overflow: none;
     background-color:#0B173B;
-    width: fit-content;
+    margin: 0px;
     float: right;
 
   }
@@ -28,11 +29,15 @@ body{
   #navigation a {
     color: #f2f2f2;
     text-align: center;
-    padding: 7px 10px;
+    padding: 4px 9px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
     float: right;
+    box-sizing: border-box;
+    display: block;
 
   }
 
