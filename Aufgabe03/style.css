@@ -50,6 +50,7 @@ body{
   .contact{
     color: rgb(48, 43, 39);
     font-size: smaller;
+    text-align: left;
 }
 .contact #button{
     color: white;
@@ -122,4 +123,14 @@ b{
 .icon a:hover {
   background-color: rgb(255, 250, 250);
   width: 80px;
+}
+.videos{
+  border-color: #0B173B;
+  border-width: 5px;
+  border-style: dotted;
+}
+.medien{
+  border-color: #0B173B;
+  border-width: 5px;
+  border-style: dotted;
 }
