@@ -29,10 +29,8 @@ body{
       top: 50px;
     }
 
-    .halbkreis p{
-      color: white;
-    }
     
+
 #navigation {
     overflow: hidden;
     background-color:#0B173B;
@@ -89,7 +87,7 @@ body{
 
 
 p{
-    color:rgb(65, 84, 141);
+    color: white;
 }
 h2{
     color:#0B173B;
