@@ -287,20 +287,17 @@ h3+p{
     header{
         background-color:white ;
         margin-left: auto;
-        margin-right: auto;   
-        position: fixed;
-        text-align: left;
+        margin-right: auto;  
+        
     }
     #Kopf [art= whateveryouwant]{
-    width: 10px;
+    width: 5px;
     background-color: #D7CBBD;
-    text-align: left;
-    }
-    #navigation img{
-        width: 30px;
-    }
+    text-align: right;
+     }
+    
     .Körper img{
-        width: 500px;
+        width: 400px;
     }
     .schreibtisch img{
         width: 300px;
@@ -324,11 +321,12 @@ h3+p{
     #navigation {
         overflow: hidden;
         background-color:white;
-        width: small;
+        width: 150px;
         float: left;
         top: 0px;
         position: fixed;
-        font-size: 50px
+        font-size: 25px;
+        text-align: left;
     
         }
     #navigation a {
