@@ -14,6 +14,10 @@ header{
 #Kopf [art= whateveryouwant]{
 width: 10px;
 background-color: #D7CBBD;
+
+}
+#Kopf div img{
+    width: 30px;
 }
 #navigation {
     overflow: hidden;
@@ -224,6 +228,7 @@ h3+p{
         color: grey;
         content: " <- pro Stück";
     }
+    
 }
 /*I phone*/
 @media screen and (max-width: 600px){
