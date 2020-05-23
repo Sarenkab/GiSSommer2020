@@ -19,6 +19,9 @@ background-color: #D7CBBD;
 #Kopf div img{
     width: 30px;
 }
+#Körper div img{
+    width: 500px;
+}
 #navigation {
     overflow: hidden;
     background-color:white;
