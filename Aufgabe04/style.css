@@ -16,12 +16,30 @@ width: 10px;
 background-color: #D7CBBD;
 
 }
-#Kopf img{
+#navigation img{
     width: 30px;
 }
-#Körper img{
+.Körper img{
     width: 500px;
 }
+.schreibtisch img{
+    width: 300px;
+}
+#Stuhl img{width: 340px;}
+#regal img{width: 315px;}
+#Halterung img{width: 355px;}
+#kommode img{width: 307px;}
+#lampe img{width: 257px;}
+#blumentopf img{width: 310px;}
+.Wohnzimmerartikel img{width: 300px;}
+#hohetöpfe img{width: 187px;}
+#Kerzenständer img{width: 267px;}
+#sofa img{width: 510px;}
+#kissenkneul img{width: 510px;}
+#regal img{width: 299px;}
+#teppich img{width: 400px;}
+#poster img{width: 175px;}
+#posterFrau img{width: 175px;}
 #navigation {
     overflow: hidden;
     background-color:white;
@@ -136,6 +154,30 @@ h3+p{
     width: 10px;
     background-color: #D7CBBD;
     }
+    #navigation img{
+        width: 30px;
+    }
+    .Körper img{
+        width: 500px;
+    }
+    .schreibtisch img{
+        width: 300px;
+    }
+    #Stuhl img{width: 340px;}
+    #regal img{width: 315px;}
+    #Halterung img{width: 355px;}
+    #kommode img{width: 307px;}
+    #lampe img{width: 257px;}
+    #blumentopf img{width: 310px;}
+    .Wohnzimmerartikel img{width: 300px;}
+    #hohetöpfe img{width: 187px;}
+    #Kerzenständer img{width: 267px;}
+    #sofa img{width: 510px;}
+    #kissenkneul img{width: 510px;}
+    #regal img{width: 299px;}
+    #teppich img{width: 400px;}
+    #poster img{width: 175px;}
+    #posterFrau img{width: 175px;}
     #navigation {
         overflow: hidden;
         background-color:white;
@@ -253,6 +295,30 @@ h3+p{
     background-color: #D7CBBD;
     text-align: left;
     }
+    #navigation img{
+        width: 30px;
+    }
+    .Körper img{
+        width: 500px;
+    }
+    .schreibtisch img{
+        width: 300px;
+    }
+    #Stuhl img{width: 340px;}
+    #regal img{width: 315px;}
+    #Halterung img{width: 355px;}
+    #kommode img{width: 307px;}
+    #lampe img{width: 257px;}
+    #blumentopf img{width: 310px;}
+    .Wohnzimmerartikel img{width: 300px;}
+    #hohetöpfe img{width: 187px;}
+    #Kerzenständer img{width: 267px;}
+    #sofa img{width: 510px;}
+    #kissenkneul img{width: 510px;}
+    #regal img{width: 299px;}
+    #teppich img{width: 400px;}
+    #poster img{width: 175px;}
+    #posterFrau img{width: 175px;}
     #navigation {
         overflow: hidden;
         background-color:white;
