@@ -22,7 +22,7 @@ background-color: #D7CBBD;
 .Körper img{
     width: 500px;
 }
-.schreibtisch img{
+#schreibtisch img{
     width: 300px;
 }
 #Stuhl img{width: 340px;}
@@ -31,7 +31,7 @@ background-color: #D7CBBD;
 #kommode img{width: 307px;}
 #lampe img{width: 257px;}
 #blumentopf img{width: 310px;}
-.Wohnzimmerartikel img{width: 300px;}
+#Wohnzimmerartikel img{width: 300px;}
 #hohetöpfe img{width: 187px;}
 #Kerzenständer img{width: 267px;}
 #sofa img{width: 510px;}
@@ -72,7 +72,7 @@ div>h2{
     color: rgb(43, 44, 44);
 
 }
-.schreibtisch{
+#schreibtisch{
     margin: auto;
     justify-content: space-evenly;
     display: flex;
@@ -90,7 +90,7 @@ div>h2{
       content: " <- pro Stück";
       color: grey;
   }
-  .Wohnzimmerartikel{
+  #Wohnzimmerartikel{
     margin: auto;
     justify-content: space-evenly;
     display: flex;
@@ -135,6 +135,7 @@ h3+p{
     color: grey;
     content: " <- pro Stück";
 }
+
 }
 /*tablet*/
 @media screen and (min-width: 600px) and (max-width: 1024px){
@@ -160,7 +161,7 @@ h3+p{
     .Körper img{
         width: 500px;
     }
-    .schreibtisch img{
+    #schreibtisch img{
         width: 300px;
     }
     #Stuhl img{width: 340px;}
@@ -169,7 +170,7 @@ h3+p{
     #kommode img{width: 307px;}
     #lampe img{width: 257px;}
     #blumentopf img{width: 310px;}
-    .Wohnzimmerartikel img{width: 300px;}
+    #Wohnzimmerartikel img{width: 300px;}
     #hohetöpfe img{width: 187px;}
     #Kerzenständer img{width: 267px;}
     #sofa img{width: 510px;}
@@ -211,7 +212,7 @@ h3+p{
         color: rgb(43, 44, 44);
     
     }
-    .schreibtisch{
+    #schreibtisch{
         margin: auto;
         justify-content: space-evenly;
         display: flex ;
@@ -229,7 +230,7 @@ h3+p{
           content: " <- pro Stück";
           color: grey;
       }
-      .Wohnzimmerartikel{
+      #Wohnzimmerartikel{
         margin: auto;
         justify-content: space-evenly;
         display: flex;
@@ -299,7 +300,7 @@ h3+p{
     .Körper img{
         width: 400px;
     }
-    .schreibtisch img{
+    #schreibtisch img{
         width: 300px;
     }
     #Stuhl img{width: 340px;}
@@ -308,7 +309,7 @@ h3+p{
     #kommode img{width: 307px;}
     #lampe img{width: 257px;}
     #blumentopf img{width: 310px;}
-    .Wohnzimmerartikel img{width: 300px;}
+    #Wohnzimmerartikel img{width: 300px;}
     #hohetöpfe img{width: 187px;}
     #Kerzenständer img{width: 267px;}
     #sofa img{width: 510px;}
@@ -349,7 +350,7 @@ h3+p{
         color: rgb(43, 44, 44);
     
     }
-    .schreibtisch{
+    #schreibtisch{
         margin: auto;
         justify-content: center;
         display: flexbox;
@@ -368,7 +369,7 @@ h3+p{
           content: " <- pro Stück";
           color: grey;
       }
-      .Wohnzimmerartikel{
+      #Wohnzimmerartikel{
         margin: auto;
         justify-content: center;
         display: flexbox;
