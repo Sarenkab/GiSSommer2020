@@ -31,6 +31,7 @@ background-color: #D7CBBD;
 #kommode img{width: 307px;}
 #lampe img{width: 257px;}
 #blumentopf img{width: 310px;}
+
 #Wohnzimmerartikel img{width: 300px;}
 #hohetöpfe img{width: 187px;}
 #Kerzenständer img{width: 267px;}
@@ -164,12 +165,17 @@ h3+p{
     #schreibtisch img{
         width: 300px;
     }
-    #Stuhl img{width: 340px;}
-    #regal img{width: 315px;}
-    #Halterung img{width: 355px;}
-    #kommode img{width: 307px;}
+    #Stuhl img{width: 300px;}
+    #tischplatte img{width: 140px;}
+    #regalweiß img{width: 140px;}
+    #regal img{width: 300px;}
+    #Halterung img{width: 300px;}
+    #kommode img{width: 300px;}
     #lampe img{width: 257px;}
-    #blumentopf img{width: 310px;}
+    #blumentopf img{width: 270px;}
+    #teppich img{width: 200px;}
+    #topfset img{width: 200px;}
+    
     #Wohnzimmerartikel img{width: 300px;}
     #hohetöpfe img{width: 187px;}
     #Kerzenständer img{width: 267px;}
@@ -215,11 +221,11 @@ h3+p{
     #schreibtisch{
         margin: auto;
         justify-content: space-evenly;
-        display: flex ;
+        display: flex;
         flex-wrap: wrap;
         }
       .büro{
-        text-align: center;
+        text-align:center;
         width: 30%;
         padding: 50px 1.5% 50px 1.5%;
       }
@@ -237,7 +243,7 @@ h3+p{
         flex-wrap: wrap;  
       }
       .Wohnzimmer{
-           text-align: center;
+        text-align:center;
         width: 30%;
         padding: 50px 1.5% 50px 1.5%; 
       }
