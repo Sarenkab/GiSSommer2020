@@ -12,25 +12,25 @@ header{
     text-align: center; 
 }
 #Kopf [art= whateveryouwant]{
-width: 10px;
-background-color: #D7CBBD;
-
-}
+width: 10px;}
 #navigation img{
     width: 30px;
 }
 .Körper img{
     width: 500px;
 }
-#schreibtisch img{
-    width: 300px;
-}
-#Stuhl img{width: 340px;}
-#regal img{width: 315px;}
-#Halterung img{width: 355px;}
-#kommode img{width: 307px;}
+
+#schreibtisch img{width: 300px;}
+#Stuhl img{width: 300px;}
+#tischplatte img{width: 140px;}
+#regalweiß img{width: 140px;}
+#regal img{width: 300px;}
+#Halterung img{width: 300px;}
+#kommode img{width: 300px;}
 #lampe img{width: 257px;}
-#blumentopf img{width: 310px;}
+#blumentopf img{width: 270px;}
+#teppich img{width: 200px;}
+#topfset img{width: 200px;}
 
 #Wohnzimmerartikel img{width: 300px;}
 #hohetöpfe img{width: 187px;}
@@ -41,6 +41,7 @@ background-color: #D7CBBD;
 #Teppich img{width: 400px;}
 #poster img{width: 175px;}
 #posterFrau img{width: 175px;}
+
 #navigation {
     overflow: hidden;
     background-color:white;
@@ -98,7 +99,7 @@ div>h2{
     flex-wrap: wrap;  
   }
   .Wohnzimmer{
-       text-align: center;
+    text-align: center;
     width: 30%;
     padding: 50px 1.5% 50px 1.5%; 
   }
