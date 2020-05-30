@@ -22,25 +22,19 @@ width: 10px;
 .Körper img{
     width: 500px;
 }
-#schreibtisch img{
-    width: 300px;
-}
-#Stuhl img{width: 340px;}
-#regal img{width: 315px;}
-#Halterung img{width: 355px;}
-#kommode img{width: 307px;}
-#lampe img{width: 257px;}
-#blumentopf img{width: 310px;}
 
-#Wohnzimmerartikel img{width: 300px;}
-#hohetöpfe img{width: 187px;}
-#Kerzenständer img{width: 267px;}
-#sofa img{width: 510px;}
-#kissenkneul img{width: 510px;}
-#bookcase img{width: 299px;}
-#Teppich img{width: 400px;}
-#poster img{width: 175px;}
-#posterFrau img{width: 175px;}
+
+
+#Wohnzimmerartikel div img{
+width: 200px;
+height: 230px;
+}
+#schreibtisch div img{
+    width: 200px;
+    height: 230px;
+}
+
+
 #navigation {
     overflow: hidden;
     background-color:white;
@@ -79,6 +73,7 @@ div>h2{
     display: flex;
     flex-wrap: wrap;
     }
+
   .büro{
     text-align: center;
     width: 30%;
@@ -165,26 +160,16 @@ h3+p{
     #schreibtisch img{
         width: 300px;
     }
-    #Stuhl img{width: 300px;}
-    #tischplatte img{width: 140px;}
-    #regalweiß img{width: 140px;}
-    #regal img{width: 300px;}
-    #Halterung img{width: 300px;}
-    #kommode img{width: 300px;}
-    #lampe img{width: 257px;}
-    #blumentopf img{width: 270px;}
-    #teppich img{width: 200px;}
-    #topfset img{width: 200px;}
+    #schreibtisch div img{
+        width: 200px;
+        height: 230px;
+    }
     
-    #Wohnzimmerartikel img{width: 300px;}
-    #hohetöpfe img{width: 187px;}
-    #Kerzenständer img{width: 267px;}
-    #sofa img{width: 510px;}
-    #kissenkneul img{width: 510px;}
-    #bookcase img{width: 299px;}
-    #Teppich img{width: 400px;}
-    #poster img{width: 175px;}
-    #posterFrau img{width: 175px;}
+    #Wohnzimmerartikel div img{
+        width: 200px;
+        height: 230px;
+    }
+   
     
     #navigation {
         overflow: hidden;
@@ -306,24 +291,14 @@ h3+p{
     .Körper img{
         width: 400px;
     }
-    #schreibtisch img{
-        width: 300px;
-    }
-    #Stuhl img{width: 340px;}
-    #regal img{width: 315px;}
-    #Halterung img{width: 355px;}
-    #kommode img{width: 307px;}
-    #lampe img{width: 257px;}
-    #blumentopf img{width: 310px;}
-    #Wohnzimmerartikel img{width: 300px;}
-    #hohetöpfe img{width: 187px;}
-    #Kerzenständer img{width: 267px;}
-    #sofa img{width: 510px;}
-    #kissenkneul img{width: 510px;}
-    #bookcase img{width: 299px;}
-    #Teppich img{width: 400px;}
-    #poster img{width: 175px;}
-    #posterFrau img{width: 175px;}
+    #Wohnzimmerartikel div img{
+        width: 200px;
+        height: 230px;
+        }
+        #schreibtisch div img{
+            width: 200px;
+            height: 230px;
+        }
     
     #navigation {
         overflow: hidden;

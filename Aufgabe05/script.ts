@@ -13,7 +13,7 @@ let und: Wohnzimmer = { img: "und.png", artikelname: "Deko &", spruch: "Und und-
 let wanduhr: Wohnzimmer = { img: "Wanduhr.jpg", artikelname: "Wanduhr", spruch: "TikTak- Gönn dir den Sound ", preis: "8.99€"};
 let beistelltisch: Wohnzimmer = { img: "beistelltisch.jfif", artikelname: "Beistelltisch", spruch: "Klein aber Fein- Es trägt auch deinen Wein", preis: "15.00€"}; 
 let aufbewahrungstisch: Wohnzimmer = { img: "Aufbewahrungstisch.webp", artikelname: "Tisch mit Aufbewahrungsfunktion", spruch: "Stauraum macht Sinn", preis: "25.00€"};
-let sofa: Wohnzimmer = {img: "sofafürWohnzimmer.jfif", artikelname: "Sofa", spruch: "gemütlich groß- entspann dich mal wieder so richtig", preis: "259.00€"};
+let sofa: Wohnzimmer = {img: "sofafürWohnzimmer.jpg", artikelname: "Sofa", spruch: "gemütlich groß- entspann dich mal wieder so richtig", preis: "259.00€"};
 let gelbersessel: Wohnzimmer = {img: "gelbersessel.jfif", artikelname: "Gelber Sessel", spruch: "Setz dich- es ist vorzüglich", preis: "158.00€"};
 let bookcase: Wohnzimmer = {img: "bookcase.webp", artikelname: "Bookcase", spruch: "Nicht nur ein Schrank- es erzählt Geschichte", preis: "80.00€"};
 let teppich: Wohnzimmer = {img: "teppich.webp", artikelname: "Teppich kariert", spruch: "Fabren und Formen - lass es dir nicht nehmen es gemütlich zu haben", preis: "99.99€"};
@@ -31,10 +31,10 @@ interface Schreibtisch {
 }
 //schreibtischartikel
 let tischbeine: Schreibtisch = {img: "Tischbeine.webp", artikelname: "Tischbeine weiß", spruch: "Praktisch gut- Beine machen den Tisch komplett", preis: "9.99€"};
-let holzhocker: Schreibtisch = {img: "holzohocker.webp", artikelname: "Holzhocker im Landhausstil", spruch: "bequem und schick- gebe deinem Büro einen besonderen Hingucker", preis: "35€"};
+let holzhocker: Schreibtisch = {img: "holzhocker.webp", artikelname: "Holzhocker im Landhausstil", spruch: "bequem und schick- gebe deinem Büro einen besonderen Hingucker", preis: "35€"};
 let stuhl: Schreibtisch = {img: "stuhl.jpg", artikelname: "Bürostuhl", spruch: "gemütlich gesund- der Stuhl, der dich auf dem weg zum Erfolg begleitet", preis: "70€"};
 let tischplatte: Schreibtisch = {img: "tischplatte.webp", artikelname: "Tischplatte Holz", spruch: "Holzig schön- Die Platte für die Beine", preis: "40€"};
-let regal: Schreibtisch = {img: "regalmetall.webp", artikelname: "weißes Regal", spruch: "immer schön- ein weißes Regal braucht doch wirklich jeder", preis: "9.99€"};
+let regal: Schreibtisch = {img: "regalweiß.webp", artikelname: "weißes Regal", spruch: "immer schön- ein weißes Regal braucht doch wirklich jeder", preis: "9.99€"};
 let kommode: Schreibtisch = {img: "kommode.webp", artikelname: "Hochglanz Kommode", spruch: "gib der Wohnung einen Kick- glänzt und funkelt", preis: "70€"};
 let posterset: Schreibtisch = {img: "posterset.png", artikelname: "Poster- set", spruch: "belebend schön- gebe der Wand ihren Charakter", preis: "35€"};
 let lampe: Schreibtisch = {img: "Lampeneu.jfif", artikelname: "Tischlampe in Holzoptik", spruch: "leuchte hell- genau das tut Sie für dich", preis: "15€"};
