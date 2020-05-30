@@ -1,4 +1,4 @@
-interface Wohnzimmerartikel {
+interface Wohnzimmer {
     img: string;
     artikelname: string;
     spruch: string;
@@ -6,21 +6,21 @@ interface Wohnzimmerartikel {
 }
 
 //Wohnzimmerartikel
-let hängetopf: Wohnzimmerartikel = {img: "Hängetopf.jpg", artikelname: "Hängetopf", spruch: "Hoch hinauf, lass die Pflanzen fliegen", preis: "9.99€" };
-let hohetöpfe: Wohnzimmerartikel = {img: "hohetöpfe.jfif", artikelname: "Hohe Metalltöpfe", spruch: "Hoch höher- der Topf bringt neue Sichten", preis: "9.99€"};
-let kerzenständer: Wohnzimmerartikel = {img: "Kerzenständer.jfif", artikelname: "Kerzenständer", spruch: "Feuer und Flamme- Lass die Wohnung leuchten", preis: "7.99€"};
-let und: Wohnzimmerartikel = { img: "und.png", artikelname: "Deko &", spruch: "Und und- Lass es Leben", preis: "3.00€"};
-let wanduhr: Wohnzimmerartikel = { img: "Wanduhr.jpg", artikelname: "Wanduhr", spruch: "TikTak- Gönn dir den Sound ", preis: "8.99€"};
-let beistelltisch: Wohnzimmerartikel = { img: "beistelltisch.jfif", artikelname: "Beistelltisch", spruch: "Klein aber Fein- Es trägt auch deinen Wein", preis: "15.00€"}; 
-let aufbewahrungstisch: Wohnzimmerartikel = { img: "Aufbewahrungstisch.webp", artikelname: "Tisch mit Aufbewahrungsfunktion", spruch: "Stauraum macht Sinn", preis: "25.00€"};
-let sofa: Wohnzimmerartikel = {img: "sofafürWohnzimmer.jfif", artikelname: "Sofa", spruch: "gemütlich groß- entspann dich mal wieder so richtig", preis: "259.00€"};
-let gelbersessel: Wohnzimmerartikel = {img: "gelbersessel.jfif", artikelname: "Gelber Sessel", spruch: "Setz dich- es ist vorzüglich", preis: "158.00€"};
-let bookcase: Wohnzimmerartikel = {img: "bookcase.webp", artikelname: "Bookcase", spruch: "Nicht nur ein Schrank- es erzählt Geschichte", preis: "80.00€"};
-let teppich: Wohnzimmerartikel = {img: "teppich.webp", artikelname: "Teppich kariert", spruch: "Fabren und Formen - lass es dir nicht nehmen es gemütlich zu haben", preis: "99.99€"};
-let poster: Wohnzimmerartikel = {img: "postercoco.jpg", artikelname: "CoCo Poster", spruch: "Auch die Wand steht auf Marken", preis: "7.00€"};
-let posterset1: Wohnzimmerartikel = {img: "posterset1.jpg", artikelname: "Poster Set", spruch: "Lass die Wand strahlen", preis: "24.95€"};
+let hängetopf: Wohnzimmer = {img: "Hängetopf.jpg", artikelname: "Hängetopf", spruch: "Hoch hinauf, lass die Pflanzen fliegen", preis: "9.99€" };
+let hohetöpfe: Wohnzimmer = {img: "hohetöpfe.jfif", artikelname: "Hohe Metalltöpfe", spruch: "Hoch höher- der Topf bringt neue Sichten", preis: "9.99€"};
+let kerzenständer: Wohnzimmer = {img: "Kerzenständer.jfif", artikelname: "Kerzenständer", spruch: "Feuer und Flamme- Lass die Wohnung leuchten", preis: "7.99€"};
+let und: Wohnzimmer = { img: "und.png", artikelname: "Deko &", spruch: "Und und- Lass es Leben", preis: "3.00€"};
+let wanduhr: Wohnzimmer = { img: "Wanduhr.jpg", artikelname: "Wanduhr", spruch: "TikTak- Gönn dir den Sound ", preis: "8.99€"};
+let beistelltisch: Wohnzimmer = { img: "beistelltisch.jfif", artikelname: "Beistelltisch", spruch: "Klein aber Fein- Es trägt auch deinen Wein", preis: "15.00€"}; 
+let aufbewahrungstisch: Wohnzimmer = { img: "Aufbewahrungstisch.webp", artikelname: "Tisch mit Aufbewahrungsfunktion", spruch: "Stauraum macht Sinn", preis: "25.00€"};
+let sofa: Wohnzimmer = {img: "sofafürWohnzimmer.jfif", artikelname: "Sofa", spruch: "gemütlich groß- entspann dich mal wieder so richtig", preis: "259.00€"};
+let gelbersessel: Wohnzimmer = {img: "gelbersessel.jfif", artikelname: "Gelber Sessel", spruch: "Setz dich- es ist vorzüglich", preis: "158.00€"};
+let bookcase: Wohnzimmer = {img: "bookcase.webp", artikelname: "Bookcase", spruch: "Nicht nur ein Schrank- es erzählt Geschichte", preis: "80.00€"};
+let teppich: Wohnzimmer = {img: "teppich.webp", artikelname: "Teppich kariert", spruch: "Fabren und Formen - lass es dir nicht nehmen es gemütlich zu haben", preis: "99.99€"};
+let poster: Wohnzimmer = {img: "postercoco.jpg", artikelname: "CoCo Poster", spruch: "Auch die Wand steht auf Marken", preis: "7.00€"};
+let posterset1: Wohnzimmer = {img: "posterset1.jpg", artikelname: "Poster Set", spruch: "Lass die Wand strahlen", preis: "24.95€"};
 
-let wohnzimmerartikel: Wohnzimmerartikel[] = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa,gelbersessel, bookcase, teppich, poster, posterset1];
+let wohnzimmerartikel: Wohnzimmer[] = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa,gelbersessel, bookcase, teppich, poster, posterset1];
 
 
 interface Schreibtisch {
