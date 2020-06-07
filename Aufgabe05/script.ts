@@ -1,3 +1,4 @@
+/*
 interface Wohnzimmer {
     img: string;
     artikelname: string;
@@ -75,36 +76,4 @@ for (let index: number = 0; index < wohnzimmerartikel.length; index++) {
     kaufen.innerHTML = "In den Warenkorb";
     document.getElementById("div1" + index)?.appendChild(kaufen);
 }
-
-//schreibtischartikel
-for (let index: number = 0; index < schreibtischartikel.length; index++) {
-    //DIV
-    let newDiv: HTMLDivElement = document.createElement("div");
-    newDiv.id = "div2" + index;
-    document.getElementById("artikel2")?.appendChild(newDiv);
-
-    //IMG
-    let imgElement: HTMLImageElement = document.createElement("img");
-    imgElement.src = schreibtischartikel[index].img;
-    document.getElementById("div2" + index)?.appendChild(imgElement);
-
-    //artikelname
-    let artikelname: HTMLParagraphElement = document.createElement("p");
-    artikelname.innerHTML = schreibtischartikel[index].artikelname;
-    document.getElementById("div2" + index)?.appendChild(artikelname);
-
-    //spruch
-    let spruch: HTMLParagraphElement = document.createElement("p");
-    spruch.innerHTML = schreibtischartikel[index].spruch;
-    document.getElementById("div2" + index)?.appendChild(spruch);
-
-    //PREIS
-    let price: HTMLParagraphElement = document.createElement("p");
-    price.innerHTML = schreibtischartikel[index].preis;
-    document.getElementById("div2" + index)?.appendChild(price);
-
-    //In den Warenkorb
-    let kaufen: HTMLButtonElement = document.createElement("button");
-    kaufen.innerHTML = "In den Warenkorb";
-    document.getElementById("div2" + index)?.appendChild(kaufen);
-}
+*/
