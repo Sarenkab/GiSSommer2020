@@ -50,12 +50,12 @@ namespace Aufgabe06 {
         //spruch
         let spruch: HTMLParagraphElement = document.createElement("p");
         spruch.innerHTML = wohnzimmer[i].spruch;
-        document.getElementById("div1" + i)?.appendChild(spruch);
+        document.getElementById("div" + i)?.appendChild(spruch);
     
         //Preis
         let price: HTMLParagraphElement = document.createElement("p");
         price.innerHTML = wohnzimmer[i].preis + "€";
-        document.getElementById("div1" + i)?.appendChild(price);
+        document.getElementById("div" + i)?.appendChild(price);
     
         //In den Warenkorb
         let kaufen: HTMLButtonElement = document.createElement("button");
