@@ -22,7 +22,7 @@ width: 10px;
 .Körper img{
     width: 500px;
 }
-#schreibtisch img{
+#Bürozeugs img{
     width: 300px;
 }
 #Stuhl img{width: 340px;}
@@ -73,7 +73,7 @@ div>h2{
     color: rgb(43, 44, 44);
 
 }
-#schreibtisch{
+#Bürozeugs{
     margin: auto;
     justify-content: space-evenly;
     display: flex;
@@ -162,7 +162,7 @@ h3+p{
     .Körper img{
         width: 500px;
     }
-    #schreibtisch img{
+    #Bürozeugs img{
         width: 300px;
     }
     #Stuhl img{width: 300px;}
@@ -218,7 +218,7 @@ h3+p{
         color: rgb(43, 44, 44);
     
     }
-    #schreibtisch{
+    #Bürozeugs{
         margin: auto;
         justify-content: space-evenly;
         display: flex;
@@ -306,7 +306,7 @@ h3+p{
     .Körper img{
         width: 400px;
     }
-    #schreibtisch img{
+    #Bürozeugs img{
         width: 300px;
     }
     #Stuhl img{width: 340px;}
@@ -356,7 +356,7 @@ h3+p{
         color: rgb(43, 44, 44);
     
     }
-    #schreibtisch{
+    #Bürozeugs{
         margin: auto;
         justify-content: center;
         display: flexbox;

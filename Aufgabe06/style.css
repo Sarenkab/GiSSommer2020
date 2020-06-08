@@ -1,0 +1,135 @@
+@media screen and (min-width: 1024px){
+    body{
+        background-color:white ;
+        font-family: 'Times New Roman', Times, serif;
+        margin-left: auto;
+        margin-right: auto;  
+    }
+    header{
+        background-color:white ;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center; 
+    }
+    #Kopf [art= whateveryouwant]{
+    width: 10px;
+    
+    
+    }
+    #navigation img{
+        width: 30px;
+    }
+    .Körper img{
+        width: 500px;
+    }
+    
+    
+    
+    #Wohnzimmerartikel div img{
+    width: 200px;
+    height: 230px;
+    }
+    #schreibtisch div img{
+        width: 200px;
+        height: 230px;
+    }
+    
+    
+    #navigation {
+        overflow: hidden;
+        background-color:white;
+        width:auto;
+        float: center;
+        top: 0px;
+        position: fixed;
+        font-size: 50px;
+        transition: all 5s ease ;
+    
+        }
+    #navigation a {
+        color: #B78338;
+        text-align: center;
+        padding: 7px 10px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+        float: center;
+    }
+    
+    #navigation a:hover{
+        color: #40686A;
+    }
+    #navigation a.active{
+        background-color: #40686A;
+        color: white;
+    }
+    div>h2{
+        color: rgb(43, 44, 44);
+    
+    }
+    #schreibtisch{
+        margin: auto;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;
+        }
+    
+      .schreibtischartikel{
+        text-align: center;
+        width: 30%;
+        padding: 50px 1.5% 50px 1.5%;
+      }
+      .Körper{
+        text-align: center;
+      }
+    #Tischbeine h4 ::after {
+          content: " <- pro Stück";
+          color: grey;
+      }
+      #Wohnzimmerartikel{
+        margin: auto;
+        justify-content: space-evenly;
+        display: flex;
+        flex-wrap: wrap;  
+      }
+      .Wohnzimmer{
+        text-align: center;
+        width: 30%;
+        padding: 50px 1.5% 50px 1.5%; 
+      }
+      main{
+          text-align: center;
+          color:#40686A ;
+      }
+      .Contact{
+        text-align: center;
+      }
+      div h1{color: #40686A;}
+    
+    .Contact #button{
+        color: #40686A;
+        background-color: white;
+        border: #40686A;
+        padding: 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 15px;
+        
+    }
+    .Contact input{
+        background-color: white;
+        color: #40686A;
+    }
+    .Contact textarea{
+        background-color: white;
+        color:#40686A;
+    }
+    h3+p{
+        color: #40686A;
+    }
+    #Tischbeine h4::after{ 
+        color: grey;
+        content: " <- pro Stück";
+    }
+    
+}
