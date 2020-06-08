@@ -61,7 +61,7 @@ namespace Aufgabe06 {
         let kaufen: HTMLButtonElement = document.createElement("button");
         kaufen.innerHTML = "In den Warenkorb";
         document.getElementById("div" + i)?.appendChild(kaufen);
-        kaufen.addEventListener("klick", handleWarenkorb);
+        kaufen.addEventListener("click", handleWarenkorb);
         kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
     
 
@@ -69,55 +69,55 @@ namespace Aufgabe06 {
     //Aufgabe 06
     let summe: number = 0;
     let zahl: number = 0;
-    let produktzähler: number = 0;
+    let produktzaehler: number = 0;
     let warenkorbblase: HTMLDivElement = document.createElement("div");
     
     function handleWarenkorb(_event: Event): void {
-     if (produktzähler >= 0) {
+     if (produktzaehler >= 0) {
          document.getElementById("warenkorbzähler")?.appendChild(warenkorbblase);
     } 
-     produktzähler++;
-     warenkorbblase.innerHTML = produktzähler + "";
+     produktzaehler++;
+     warenkorbblase.innerHTML = produktzaehler + "";
     
      if ((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
         summe = zahl + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
         zahl = summe;
     }
-     console.log(summe.toFixed(0));
+     console.log(summe.toFixed(0) + "€");
     }
     //Aufgabe 06-2
-    let xalles: HTMLAnchorElement = document.createElement("a");
-    xalles.id = "alleArtikel";
-    xalles.innerHTML = "Alle Dekoartikel";
-    xalles.addEventListener("klick", handleKategorie);
-    document.getElementById("allesbutton")?.appendChild(xalles);
+    let alles: HTMLAnchorElement = document.createElement("a");
+    alles.id = "alleArtikel";
+    alles.innerHTML = "Alle Dekoartikel";
+    alles.addEventListener("click", handleKategorie);
+    document.getElementById("allesbutton")?.appendChild(alles);
 
-    let xdekoartikel: HTMLAnchorElement = document.createElement("a");
-    xdekoartikel.id = "wohnartikel";
-    xdekoartikel.innerHTML = "Wohnartikel";
-    xdekoartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("Wohnzimmerbutton")?.appendChild(xdekoartikel);
+    let dekosachen: HTMLAnchorElement = document.createElement("a");
+    dekosachen.id = "wohnartikel";
+    dekosachen.innerHTML = "Wohnartikel";
+    dekosachen.addEventListener("click", handleKategorie);
+    document.getElementById("Wohnzimmerbutton")?.appendChild(dekosachen);
     
-    let xSchreibtischartikel: HTMLAnchorElement = document.createElement("a");
-    xSchreibtischartikel.id = "büroartikel";
-    xSchreibtischartikel.innerHTML = "Büroartikel";
-    xSchreibtischartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("schreibtischbutton")?.appendChild(xSchreibtischartikel);
+    let schreibtischsachen: HTMLAnchorElement = document.createElement("a");
+    schreibtischsachen.id = "büroartikel";
+    schreibtischsachen.innerHTML = "Büroartikel";
+    schreibtischsachen.addEventListener("click", handleKategorie);
+    document.getElementById("schreibtischbutton")?.appendChild(schreibtischsachen);
     
     function handleKategorie(_event: Event): void {
        
      //Alles  
-        if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "alles") {
+        if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "alleArtikel") {
             (<HTMLDivElement>document.getElementById("artikel0")).style.display = "block";
             (<HTMLDivElement>document.getElementById("artikel1")).style.display = "block";
         
      //Wohnzimmer   
-        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "Wohnzimmer") {
-            (<HTMLDivElement>document.getElementById("artikel0")).style.display = "none";
-            (<HTMLDivElement>document.getElementById("artikel1")).style.display = "block";
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "wohnartikel") {
+            (<HTMLDivElement>document.getElementById("artikel1")).style.display = "none";
+            (<HTMLDivElement>document.getElementById("artikel0")).style.display = "block";
         
      //Schreibtisch   
-        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "schreibtisch") {
+        } else if ((<HTMLDivElement>_event.currentTarget).getAttribute("id") == "büroartikel") {
             (<HTMLDivElement>document.getElementById("artikel0")).style.display = "none";
             (<HTMLDivElement>document.getElementById("artikel1")).style.display = "block";
         }

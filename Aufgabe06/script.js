@@ -48,55 +48,55 @@ var Aufgabe06;
         let kaufen = document.createElement("button");
         kaufen.innerHTML = "In den Warenkorb";
         document.getElementById("div" + i)?.appendChild(kaufen);
-        kaufen.addEventListener("klick", handleWarenkorb);
+        kaufen.addEventListener("click", handleWarenkorb);
         kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
     }
     //Aufgabe 06
     let summe = 0;
     let zahl = 0;
-    let produktzähler = 0;
+    let produktzaehler = 0;
     let warenkorbblase = document.createElement("div");
     function handleWarenkorb(_event) {
-        if (produktzähler >= 0) {
+        if (produktzaehler >= 0) {
             document.getElementById("warenkorbzähler")?.appendChild(warenkorbblase);
         }
-        produktzähler++;
-        warenkorbblase.innerHTML = produktzähler + "";
+        produktzaehler++;
+        warenkorbblase.innerHTML = produktzaehler + "";
         if (_event.currentTarget?.getAttribute("preis")) {
             summe = zahl + parseInt(_event.currentTarget?.getAttribute("preis"));
             zahl = summe;
         }
-        console.log(summe.toFixed(0));
+        console.log(summe.toFixed(0) + "€");
     }
     //Aufgabe 06-2
-    let xalles = document.createElement("a");
-    xalles.id = "alleArtikel";
-    xalles.innerHTML = "Alle Dekoartikel";
-    xalles.addEventListener("klick", handleKategorie);
-    document.getElementById("allesbutton")?.appendChild(xalles);
-    let xdekoartikel = document.createElement("a");
-    xdekoartikel.id = "wohnartikel";
-    xdekoartikel.innerHTML = "Wohnartikel";
-    xdekoartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("Wohnzimmerbutton")?.appendChild(xdekoartikel);
-    let xSchreibtischartikel = document.createElement("a");
-    xSchreibtischartikel.id = "büroartikel";
-    xSchreibtischartikel.innerHTML = "Büroartikel";
-    xSchreibtischartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("schreibtischbutton")?.appendChild(xSchreibtischartikel);
+    let alles = document.createElement("a");
+    alles.id = "alleArtikel";
+    alles.innerHTML = "Alle Dekoartikel";
+    alles.addEventListener("click", handleKategorie);
+    document.getElementById("allesbutton")?.appendChild(alles);
+    let dekosachen = document.createElement("a");
+    dekosachen.id = "wohnartikel";
+    dekosachen.innerHTML = "Wohnartikel";
+    dekosachen.addEventListener("click", handleKategorie);
+    document.getElementById("Wohnzimmerbutton")?.appendChild(dekosachen);
+    let schreibtischsachen = document.createElement("a");
+    schreibtischsachen.id = "büroartikel";
+    schreibtischsachen.innerHTML = "Büroartikel";
+    schreibtischsachen.addEventListener("click", handleKategorie);
+    document.getElementById("schreibtischbutton")?.appendChild(schreibtischsachen);
     function handleKategorie(_event) {
         //Alles  
-        if (_event.currentTarget.getAttribute("id") == "alles") {
+        if (_event.currentTarget.getAttribute("id") == "alleArtikel") {
             document.getElementById("artikel0").style.display = "block";
             document.getElementById("artikel1").style.display = "block";
             //Wohnzimmer   
         }
-        else if (_event.currentTarget.getAttribute("id") == "Wohnzimmer") {
-            document.getElementById("artikel0").style.display = "none";
-            document.getElementById("artikel1").style.display = "block";
+        else if (_event.currentTarget.getAttribute("id") == "wohnartikel") {
+            document.getElementById("artikel1").style.display = "none";
+            document.getElementById("artikel0").style.display = "block";
             //Schreibtisch   
         }
-        else if (_event.currentTarget.getAttribute("id") == "schreibtisch") {
+        else if (_event.currentTarget.getAttribute("id") == "büroartikel") {
             document.getElementById("artikel0").style.display = "none";
             document.getElementById("artikel1").style.display = "block";
         }
