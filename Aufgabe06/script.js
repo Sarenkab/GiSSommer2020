@@ -73,17 +73,17 @@ var Aufgabe06;
     xalles.id = "alleArtikel";
     xalles.innerHTML = "Alle Dekoartikel";
     xalles.addEventListener("klick", handleKategorie);
-    document.getElementById("alles")?.appendChild(xalles);
+    document.getElementById("allesbutton")?.appendChild(xalles);
     let xdekoartikel = document.createElement("a");
-    xdekoartikel.id = "wohnen";
+    xdekoartikel.id = "wohnartikel";
     xdekoartikel.innerHTML = "Wohnartikel";
     xdekoartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("Wohnzimmerartikeldeko")?.appendChild(xdekoartikel);
+    document.getElementById("Wohnzimmerbutton")?.appendChild(xdekoartikel);
     let xSchreibtischartikel = document.createElement("a");
-    xSchreibtischartikel.id = "schreib";
+    xSchreibtischartikel.id = "büroartikel";
     xSchreibtischartikel.innerHTML = "Büroartikel";
     xSchreibtischartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("schreibtischdeko")?.appendChild(xSchreibtischartikel);
+    document.getElementById("schreibtischbutton")?.appendChild(xSchreibtischartikel);
     function handleKategorie(_event) {
         //Alles  
         if (_event.currentTarget.getAttribute("id") == "alles") {
