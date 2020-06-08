@@ -16,40 +16,40 @@ var Aufgabe06;
     let poster = { img: "postercoco.jpg", artikelname: "CoCo Poster", spruch: "Auch die Wand steht auf Marken", preis: 7.00, kategorie: 1 };
     let posterset1 = { img: "posterset1.jpg", artikelname: "Poster Set", spruch: "Lass die Wand strahlen", preis: 24.95, kategorie: 1 };
     let dekoartikel = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
-    for (let index = 0; index < dekoartikel.length; index++) {
+    for (let i = 0; i < dekoartikel.length; i++) {
         //DIV
-        if (dekoartikel[index].kategorie == 0) {
+        if (dekoartikel[i].kategorie == 0) {
             let newDiv = document.createElement("div");
-            newDiv.id = "div" + index;
+            newDiv.id = "div" + i;
             document.getElementById("artikel0")?.appendChild(newDiv);
         }
-        if (dekoartikel[index].kategorie == 1) {
+        if (dekoartikel[i].kategorie == 1) {
             let newDiv = document.createElement("div");
-            newDiv.id = "div" + index;
+            newDiv.id = "div" + i;
             document.getElementById("artikel1")?.appendChild(newDiv);
         }
         //Fotos 
         let imgElement = document.createElement("img");
-        imgElement.src = dekoartikel[index].img;
-        document.getElementById("div" + index)?.appendChild(imgElement);
+        imgElement.src = dekoartikel[i].img;
+        document.getElementById("div" + i)?.appendChild(imgElement);
         //artikelname
         let artikelname = document.createElement("p");
-        artikelname.innerHTML = dekoartikel[index].artikelname;
-        document.getElementById("div" + index)?.appendChild(artikelname);
+        artikelname.innerHTML = dekoartikel[i].artikelname;
+        document.getElementById("div" + i)?.appendChild(artikelname);
         //spruch
         let spruch = document.createElement("p");
-        spruch.innerHTML = dekoartikel[index].spruch;
-        document.getElementById("div1" + index)?.appendChild(spruch);
+        spruch.innerHTML = dekoartikel[i].spruch;
+        document.getElementById("div1" + i)?.appendChild(spruch);
         //Preis
         let price = document.createElement("p");
-        price.innerHTML = dekoartikel[index].preis + "€";
-        document.getElementById("div1" + index)?.appendChild(price);
+        price.innerHTML = dekoartikel[i].preis + "€";
+        document.getElementById("div1" + i)?.appendChild(price);
         //In den Warenkorb
         let kaufen = document.createElement("button");
         kaufen.innerHTML = "In den Warenkorb";
-        document.getElementById("div" + index)?.appendChild(kaufen);
+        document.getElementById("div" + i)?.appendChild(kaufen);
         kaufen.addEventListener("klick", handleWarenkorb);
-        kaufen.setAttribute("preis", dekoartikel[index].preis.toString());
+        kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
     }
     //Aufgabe 06
     let summe = 0;
@@ -78,12 +78,12 @@ var Aufgabe06;
     xdekoartikel.id = "wohnen";
     xdekoartikel.innerHTML = "Wohnartikel";
     xdekoartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("Wohnzimmerartikel")?.appendChild(xdekoartikel);
+    document.getElementById("Wohnzimmerartikeldeko")?.appendChild(xdekoartikel);
     let xSchreibtischartikel = document.createElement("a");
     xSchreibtischartikel.id = "schreib";
     xSchreibtischartikel.innerHTML = "Büroartikel";
     xSchreibtischartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("schreibtisch")?.appendChild(xSchreibtischartikel);
+    document.getElementById("schreibtischdeko")?.appendChild(xSchreibtischartikel);
     function handleKategorie(_event) {
         //Alles  
         if (_event.currentTarget.getAttribute("id") == "alles") {

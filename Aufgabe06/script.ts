@@ -25,44 +25,44 @@ namespace Aufgabe06 {
     
     let dekoartikel: Wohnzimmer[] = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
     
-    for (let index: number = 0; index < dekoartikel.length; index++) {
+    for (let i: number = 0; i < dekoartikel.length; i++) {
         //DIV
-        if (dekoartikel[index].kategorie == 0) {
+        if (dekoartikel[i].kategorie == 0) {
         let newDiv: HTMLDivElement = document.createElement("div");
-        newDiv.id = "div" + index;
+        newDiv.id = "div" + i;
         document.getElementById("artikel0")?.appendChild(newDiv);
         }
-        if (dekoartikel[index].kategorie == 1) {
+        if (dekoartikel[i].kategorie == 1) {
             let newDiv: HTMLDivElement = document.createElement("div");
-            newDiv.id = "div" + index;
+            newDiv.id = "div" + i;
             document.getElementById("artikel1")?.appendChild(newDiv);
             }
         //Fotos 
         let imgElement: HTMLImageElement = document.createElement("img");
-        imgElement.src = dekoartikel[index].img;
-        document.getElementById("div" + index)?.appendChild(imgElement);
+        imgElement.src = dekoartikel[i].img;
+        document.getElementById("div" + i)?.appendChild(imgElement);
     
         //artikelname
         let artikelname: HTMLParagraphElement = document.createElement("p");
-        artikelname.innerHTML = dekoartikel[index]. artikelname;
-        document.getElementById("div" + index)?.appendChild(artikelname);
+        artikelname.innerHTML = dekoartikel[i]. artikelname;
+        document.getElementById("div" + i)?.appendChild(artikelname);
     
         //spruch
         let spruch: HTMLParagraphElement = document.createElement("p");
-        spruch.innerHTML = dekoartikel[index].spruch;
-        document.getElementById("div1" + index)?.appendChild(spruch);
+        spruch.innerHTML = dekoartikel[i].spruch;
+        document.getElementById("div1" + i)?.appendChild(spruch);
     
         //Preis
         let price: HTMLParagraphElement = document.createElement("p");
-        price.innerHTML = dekoartikel[index].preis + "€";
-        document.getElementById("div1" + index)?.appendChild(price);
+        price.innerHTML = dekoartikel[i].preis + "€";
+        document.getElementById("div1" + i)?.appendChild(price);
     
         //In den Warenkorb
         let kaufen: HTMLButtonElement = document.createElement("button");
         kaufen.innerHTML = "In den Warenkorb";
-        document.getElementById("div" + index)?.appendChild(kaufen);
+        document.getElementById("div" + i)?.appendChild(kaufen);
         kaufen.addEventListener("klick", handleWarenkorb);
-        kaufen.setAttribute("preis", dekoartikel[index].preis.toString());
+        kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
     
 
     }
@@ -73,14 +73,14 @@ namespace Aufgabe06 {
     let warenkorbblase: HTMLDivElement = document.createElement("div");
     
     function handleWarenkorb(_event: Event): void {
-     if ( produktzähler >= 0) {
+     if (produktzähler >= 0) {
          document.getElementById("warenkorbzähler")?.appendChild(warenkorbblase);
     } 
      produktzähler++;
      warenkorbblase.innerHTML = produktzähler + "";
     
-     if ((<HTMLDivElement>_event.currentTarget)?.getAttribute("preis")) {
-        summe = zahl + parseInt((<HTMLDivElement>_event.currentTarget)?.getAttribute("preis")!);
+     if ((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")) {
+        summe = zahl + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
         zahl = summe;
     }
      console.log(summe.toFixed(0));
@@ -96,13 +96,13 @@ namespace Aufgabe06 {
     xdekoartikel.id = "wohnen";
     xdekoartikel.innerHTML = "Wohnartikel";
     xdekoartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("Wohnzimmerartikel")?.appendChild(xdekoartikel);
+    document.getElementById("Wohnzimmerartikeldeko")?.appendChild(xdekoartikel);
     
     let xSchreibtischartikel: HTMLAnchorElement = document.createElement("a");
     xSchreibtischartikel.id = "schreib";
     xSchreibtischartikel.innerHTML = "Büroartikel";
     xSchreibtischartikel.addEventListener("klick", handleKategorie);
-    document.getElementById("schreibtisch")?.appendChild(xSchreibtischartikel);
+    document.getElementById("schreibtischdeko")?.appendChild(xSchreibtischartikel);
     
     function handleKategorie(_event: Event): void {
        
