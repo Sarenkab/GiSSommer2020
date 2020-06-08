@@ -1,7 +1,7 @@
 "use strict";
 var Aufgabe06;
 (function (Aufgabe06) {
-    //dekoartikel
+    //wohnzimmer
     let hängetopf = { img: "Hängetopf.jpg", artikelname: "Hängetopf", spruch: "Hoch hinauf, lass die Pflanzen fliegen", preis: 9.99, kategorie: 0 };
     let hohetöpfe = { img: "hohetöpfe.jfif", artikelname: "Hohe Metalltöpfe", spruch: "Hoch höher- der Topf bringt neue Sichten", preis: 9.99, kategorie: 0 };
     let kerzenständer = { img: "Kerzenständer.jfif", artikelname: "Kerzenständer", spruch: "Feuer und Flamme- Lass die Wohnung leuchten", preis: 7.99, kategorie: 0 };
@@ -15,41 +15,41 @@ var Aufgabe06;
     let teppich = { img: "teppich.webp", artikelname: "Teppich kariert", spruch: "Fabren und Formen - lass es dir nicht nehmen es gemütlich zu haben", preis: 99.99, kategorie: 1 };
     let poster = { img: "postercoco.jpg", artikelname: "CoCo Poster", spruch: "Auch die Wand steht auf Marken", preis: 7.00, kategorie: 1 };
     let posterset1 = { img: "posterset1.jpg", artikelname: "Poster Set", spruch: "Lass die Wand strahlen", preis: 24.95, kategorie: 1 };
-    let dekoartikel = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
-    for (let i = 0; i < dekoartikel.length; i++) {
+    let wohnzimmer = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
+    for (let i = 0; i < wohnzimmer.length; i++) {
         //DIV
-        if (dekoartikel[i].kategorie == 0) {
+        if (wohnzimmer[i].kategorie == 0) {
             let newDiv = document.createElement("div");
             newDiv.id = "div" + i;
             document.getElementById("artikel0")?.appendChild(newDiv);
         }
-        if (dekoartikel[i].kategorie == 1) {
+        if (wohnzimmer[i].kategorie == 1) {
             let newDiv = document.createElement("div");
             newDiv.id = "div" + i;
             document.getElementById("artikel1")?.appendChild(newDiv);
         }
         //Fotos 
         let imgElement = document.createElement("img");
-        imgElement.src = dekoartikel[i].img;
+        imgElement.src = wohnzimmer[i].img;
         document.getElementById("div" + i)?.appendChild(imgElement);
         //artikelname
         let artikelname = document.createElement("p");
-        artikelname.innerHTML = dekoartikel[i].artikelname;
+        artikelname.innerHTML = wohnzimmer[i].artikelname;
         document.getElementById("div" + i)?.appendChild(artikelname);
         //spruch
         let spruch = document.createElement("p");
-        spruch.innerHTML = dekoartikel[i].spruch;
+        spruch.innerHTML = wohnzimmer[i].spruch;
         document.getElementById("div1" + i)?.appendChild(spruch);
         //Preis
         let price = document.createElement("p");
-        price.innerHTML = dekoartikel[i].preis + "€";
+        price.innerHTML = wohnzimmer[i].preis + "€";
         document.getElementById("div1" + i)?.appendChild(price);
         //In den Warenkorb
         let kaufen = document.createElement("button");
         kaufen.innerHTML = "In den Warenkorb";
         document.getElementById("div" + i)?.appendChild(kaufen);
         kaufen.addEventListener("click", handleWarenkorb);
-        kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
+        kaufen.setAttribute("preis", wohnzimmer[i].preis.toString());
     }
     //Aufgabe 06
     let summe = 0;
@@ -58,7 +58,7 @@ var Aufgabe06;
     let warenkorbblase = document.createElement("div");
     function handleWarenkorb(_event) {
         if (produktzaehler >= 0) {
-            document.getElementById("warenkorbzähler")?.appendChild(warenkorbblase);
+            document.getElementById("warenkorbzaehler")?.appendChild(warenkorbblase);
         }
         produktzaehler++;
         warenkorbblase.innerHTML = produktzaehler + "";
@@ -66,12 +66,12 @@ var Aufgabe06;
             summe = zahl + parseInt(_event.currentTarget?.getAttribute("preis"));
             zahl = summe;
         }
-        console.log(summe.toFixed(0) + "€");
+        console.log(summe.toFixed(0));
     }
     //Aufgabe 06-2
     let alles = document.createElement("a");
     alles.id = "alleArtikel";
-    alles.innerHTML = "Alle Dekoartikel";
+    alles.innerHTML = "Alle wohnzimmer";
     alles.addEventListener("click", handleKategorie);
     document.getElementById("allesbutton")?.appendChild(alles);
     let dekosachen = document.createElement("a");

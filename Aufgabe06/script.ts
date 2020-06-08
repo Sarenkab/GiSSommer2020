@@ -8,7 +8,7 @@ namespace Aufgabe06 {
         kategorie: number;
     }
     
-    //dekoartikel
+    //wohnzimmer
     let hängetopf: Wohnzimmer = {img: "Hängetopf.jpg", artikelname: "Hängetopf", spruch: "Hoch hinauf, lass die Pflanzen fliegen", preis: 9.99, kategorie: 0 };
     let hohetöpfe: Wohnzimmer = {img: "hohetöpfe.jfif", artikelname: "Hohe Metalltöpfe", spruch: "Hoch höher- der Topf bringt neue Sichten", preis: 9.99, kategorie: 0};
     let kerzenständer: Wohnzimmer = {img: "Kerzenständer.jfif", artikelname: "Kerzenständer", spruch: "Feuer und Flamme- Lass die Wohnung leuchten", preis: 7.99, kategorie: 0};
@@ -23,38 +23,38 @@ namespace Aufgabe06 {
     let poster: Wohnzimmer = {img: "postercoco.jpg", artikelname: "CoCo Poster", spruch: "Auch die Wand steht auf Marken", preis: 7.00, kategorie: 1};
     let posterset1: Wohnzimmer = {img: "posterset1.jpg", artikelname: "Poster Set", spruch: "Lass die Wand strahlen", preis: 24.95, kategorie: 1};
     
-    let dekoartikel: Wohnzimmer[] = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
+    let wohnzimmer: Wohnzimmer[] = [hängetopf, hohetöpfe, kerzenständer, und, wanduhr, beistelltisch, aufbewahrungstisch, sofa, gelbersessel, bookcase, teppich, poster, posterset1];
     
-    for (let i: number = 0; i < dekoartikel.length; i++) {
+    for (let i: number = 0; i < wohnzimmer.length; i++) {
         //DIV
-        if (dekoartikel[i].kategorie == 0) {
+        if (wohnzimmer[i].kategorie == 0) {
         let newDiv: HTMLDivElement = document.createElement("div");
         newDiv.id = "div" + i;
         document.getElementById("artikel0")?.appendChild(newDiv);
         }
-        if (dekoartikel[i].kategorie == 1) {
+        if (wohnzimmer[i].kategorie == 1) {
             let newDiv: HTMLDivElement = document.createElement("div");
             newDiv.id = "div" + i;
             document.getElementById("artikel1")?.appendChild(newDiv);
             }
         //Fotos 
         let imgElement: HTMLImageElement = document.createElement("img");
-        imgElement.src = dekoartikel[i].img;
+        imgElement.src = wohnzimmer[i].img;
         document.getElementById("div" + i)?.appendChild(imgElement);
     
         //artikelname
         let artikelname: HTMLParagraphElement = document.createElement("p");
-        artikelname.innerHTML = dekoartikel[i]. artikelname;
+        artikelname.innerHTML = wohnzimmer[i]. artikelname;
         document.getElementById("div" + i)?.appendChild(artikelname);
     
         //spruch
         let spruch: HTMLParagraphElement = document.createElement("p");
-        spruch.innerHTML = dekoartikel[i].spruch;
+        spruch.innerHTML = wohnzimmer[i].spruch;
         document.getElementById("div1" + i)?.appendChild(spruch);
     
         //Preis
         let price: HTMLParagraphElement = document.createElement("p");
-        price.innerHTML = dekoartikel[i].preis + "€";
+        price.innerHTML = wohnzimmer[i].preis + "€";
         document.getElementById("div1" + i)?.appendChild(price);
     
         //In den Warenkorb
@@ -62,7 +62,7 @@ namespace Aufgabe06 {
         kaufen.innerHTML = "In den Warenkorb";
         document.getElementById("div" + i)?.appendChild(kaufen);
         kaufen.addEventListener("click", handleWarenkorb);
-        kaufen.setAttribute("preis", dekoartikel[i].preis.toString());
+        kaufen.setAttribute("preis", wohnzimmer[i].preis.toString());
     
 
     }
@@ -74,7 +74,7 @@ namespace Aufgabe06 {
     
     function handleWarenkorb(_event: Event): void {
      if (produktzaehler >= 0) {
-         document.getElementById("warenkorbzähler")?.appendChild(warenkorbblase);
+         document.getElementById("warenkorbzaehler")?.appendChild(warenkorbblase);
     } 
      produktzaehler++;
      warenkorbblase.innerHTML = produktzaehler + "";
@@ -83,12 +83,12 @@ namespace Aufgabe06 {
         summe = zahl + parseInt((<HTMLButtonElement>_event.currentTarget)?.getAttribute("preis")!);
         zahl = summe;
     }
-     console.log(summe.toFixed(0) + "€");
+     console.log(summe.toFixed(0));
     }
     //Aufgabe 06-2
     let alles: HTMLAnchorElement = document.createElement("a");
     alles.id = "alleArtikel";
-    alles.innerHTML = "Alle Dekoartikel";
+    alles.innerHTML = "Alle wohnzimmer";
     alles.addEventListener("click", handleKategorie);
     document.getElementById("allesbutton")?.appendChild(alles);
 
