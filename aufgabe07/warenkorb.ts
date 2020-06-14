@@ -1,4 +1,5 @@
 namespace aufgabe07 {
+    
     let length: number = parseInt(localStorage.getItem("anzahlvonArt")!);
     let preis: number = 0;
     let gesamtpreis: HTMLParagraphElement = document.createElement("p");
