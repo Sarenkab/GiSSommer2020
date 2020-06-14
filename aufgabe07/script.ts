@@ -1,5 +1,5 @@
 namespace aufgabe07 {
-    
+
         
 export function createArtikel(): void {
 for (let i: number = 0; i < wohnzimmer.length; i++) {
