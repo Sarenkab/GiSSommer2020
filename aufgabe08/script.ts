@@ -7,7 +7,7 @@ namespace A08Server {
     //Hängt Formulardaten an die URL
     async function addToURL(): Promise<string> {
         formData = new FormData(document.forms[0]);
-        let url: string = "";
+        let url: string = "https://sarenkahasanewapp.herokuapp.com/";
         let query: URLSearchParams = new URLSearchParams(<any>formData);
         url = url + "?" + query.toString();
         return url;
@@ -20,7 +20,7 @@ namespace A08Server {
     //Serverantwort
     async function getResponse(_url: RequestInfo): Promise<void> {
         let antwort: Response = await fetch(_url, { method: "get" });
-        let antwort2 : string = await antwort.text();
+        let antwort2: string = await antwort.text();
         console.log(antwort2);
     }
 }
