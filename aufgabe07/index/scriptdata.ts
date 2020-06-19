@@ -7,7 +7,8 @@ namespace aufgabe07 {
             kategorie: number;
     }
     export let wohnzimmer: Wohnzimmer[];
-    loadWohnzimmer("daten.json");
+    // loadWohnzimmer("http://127.0.0.1:5500/aufgabe07/daten.json");
+    loadWohnzimmer("https://sarenkab.github.io/GiSSommer2020/aufgabe07/daten.json");
 
     async function loadWohnzimmer(_url: RequestInfo): Promise<void> {
         let response: Response = await fetch(_url);
