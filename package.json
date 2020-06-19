@@ -1,0 +1,21 @@
+{
+  "name": "sarenkahasanewapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "node aufgabe08/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarenkab/GiSSommer2020.git"
+  },
+  "author": "sarenka blunk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarenkab/GiSSommer2020/issues"
+  },
+  "homepage": "https://github.com/Sarenkab/GiSSommer2020#readme"
+}
