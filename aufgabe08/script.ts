@@ -14,11 +14,11 @@ namespace A08Server {
     }
 
     async function buttonHandle(): Promise<void> {
-        getResponse(await addToURL());
+        getCommunicate(await addToURL());
     }
 
     //Serverantwort
-    async function getResponse(_url: RequestInfo): Promise<void> {
+    async function getCommunicate(_url: RequestInfo): Promise<void> {
         let antwort: Response = await fetch(_url, { method: "get" });
         let antwort2: string = await antwort.text();
         console.log(antwort2);
