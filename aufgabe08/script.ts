@@ -1,4 +1,4 @@
-namespace A08Server {
+namespace Aufgabe08 {
 
     let formData: FormData;
     let versand: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("button"));
