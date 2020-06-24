@@ -1,9 +1,9 @@
 "use strict";
-var Aufgabe08;
-(function (Aufgabe08) {
+var A08;
+(function (A08) {
     let formData;
-    let versand = document.getElementById("button");
-    versand.addEventListener("click", buttonHandle);
+    let myButton = document.getElementById("button");
+    myButton.addEventListener("click", buttonHandler);
     //Hängt Formulardaten an die URL
     async function addToURL() {
         formData = new FormData(document.forms[0]);
@@ -12,14 +12,14 @@ var Aufgabe08;
         url = url + "?" + query.toString();
         return url;
     }
-    async function buttonHandle() {
-        getCommunicate(await addToURL());
+    async function buttonHandler() {
+        getAntwort(await addToURL());
     }
-    //Serverantwort
-    async function getCommunicate(_url) {
+    //Holt sich Antwort vom Server
+    async function getAntwort(_url) {
         let antwort = await fetch(_url, { method: "get" });
         let antwort2 = await antwort.text();
         console.log(antwort2);
     }
-})(Aufgabe08 || (Aufgabe08 = {}));
+})(A08 || (A08 = {}));
 //# sourceMappingURL=script.js.map
