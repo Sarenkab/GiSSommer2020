@@ -1,11 +1,10 @@
 namespace A08 {
 
     let formData: FormData;
-    let versand: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("button"));
-    versand.addEventListener("click", buttonHandle);
-
+    let myButton: HTMLButtonElement = (<HTMLButtonElement>document.getElementById("button"));
+    myButton.addEventListener("click", buttonHandler);
+    
     //Hängt Formulardaten an die URL
-
     async function addToURL(): Promise<string> {
         formData = new FormData(document.forms[0]);
         let url: string = "https://sarenkahasanewapp.herokuapp.com/";
@@ -14,16 +13,14 @@ namespace A08 {
         return url;
     }
 
-
-    async function buttonHandle(): Promise<void> {
-        getCommunicate(await addToURL());
+    async function buttonHandler(): Promise<void> {
+        getResponse(await addToURL());
     }
 
-    //Serverantwort
-
-    async function getCommunicate(_url: RequestInfo): Promise<void> {
-        let antwort: Response = await fetch(_url, { method: "get" });
-        let antwort2: string = await antwort.text();
-        console.log(antwort2);
+    //Holt sich Antwort vom Server
+    async function getResponse(_url: RequestInfo): Promise<void> {
+        let response: Response = await fetch(_url, { method: "get" });
+        let resp2: string = await response.text();
+        console.log(resp2);
     }
 }
