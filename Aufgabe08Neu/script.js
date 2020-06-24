@@ -1,6 +1,6 @@
 "use strict";
-var A08;
-(function (A08) {
+var Aufgabe08;
+(function (Aufgabe08) {
     let formData;
     let versand = document.getElementById("button");
     versand.addEventListener("click", buttonHandle);
@@ -21,5 +21,5 @@ var A08;
         let antwort2 = await antwort.text();
         console.log(antwort2);
     }
-})(A08 || (A08 = {}));
+})(Aufgabe08 || (Aufgabe08 = {}));
 //# sourceMappingURL=script.js.map
