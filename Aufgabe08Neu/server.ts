@@ -1,5 +1,6 @@
 import * as Http from "http";
 
+
 export namespace A08Server {
     //ausgabe serverstart
   console.log("Starting server");
