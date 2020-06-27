@@ -1,4 +1,4 @@
-namespace Aufgabe09 {
+namespace A09Server {
     let formData: FormData;
     
     let actionHTML: HTMLButtonElement = <HTMLButtonElement> document.getElementById("html");

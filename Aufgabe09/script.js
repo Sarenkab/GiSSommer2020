@@ -1,6 +1,6 @@
 "use strict";
-var Aufgabe09;
-(function (Aufgabe09) {
+var A09Server;
+(function (A09Server) {
     let formData;
     let actionHTML = document.getElementById("html");
     actionHTML.addEventListener("click", handleHTML);
@@ -27,5 +27,5 @@ var Aufgabe09;
         let responseText = await response.json();
         console.log(responseText);
     }
-})(Aufgabe09 || (Aufgabe09 = {}));
+})(A09Server || (A09Server = {}));
 //# sourceMappingURL=script.js.map
